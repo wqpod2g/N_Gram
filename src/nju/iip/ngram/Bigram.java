@@ -165,11 +165,11 @@ public class Bigram {
 					two_continuous_word_tf=bigram_map.get(two_continuous_word);
 				}
 				
-				probility=probility+Math.log((two_continuous_word_tf+0.001)/dictionary_map.get(words_sequence.get(i)));
+				probility=probility+Math.log((two_continuous_word_tf+0.000001)/dictionary_map.get(words_sequence.get(i)));
 			}
 			
 			else{
-				probility=probility+Math.log(0.001/bigramMatrix.getWordNum());
+				probility=probility+Math.log(0.000001/bigramMatrix.getWordNum());
 			}
 		}
 		return probility;

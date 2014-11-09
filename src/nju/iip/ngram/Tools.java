@@ -26,9 +26,7 @@ public class Tools {
         ArrayList<String> words = new ArrayList<String>();
         try {
             while ((lexeme = iks.next()) != null) {
-            	if(lexeme.getLength()>1){
             		words.add(lexeme.getLexemeText());
-            	}
             }       
         }catch(IOException e) {
             e.printStackTrace();
